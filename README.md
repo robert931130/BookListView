@@ -1,6 +1,6 @@
 # BookListView 圖書管理程式
 
-本專案為一個基於 Windows Forms 發展的圖書管理視窗應用程式 。透過 ListView 控制項，展示如何以多種不同的檢視形式（如大圖示、詳細資料等）呈現圖書資訊 ，並提供使用者透過雙擊快速將書籍加入借書清單的互動功能 。
+這是依照 `06_listview_114-2.pdf` 製作的 Windows Forms App (.NET Framework) 圖書管理範例，專案名稱為 `BookListView`，主視窗為 `frmBooks`。
 
 ## 視窗截圖
 
@@ -24,7 +24,7 @@
 ## 使用的技術與控制項
 
 - C# Windows Forms
-- `.NET 10.0-windows`
+- `.NET Framework 4.8`
 - `ListView`：顯示圖書清單、書名、作者、類別與封面圖示。
 - `ImageList`：提供大圖示 `90x120` 與小圖示 `15x20`。
 - `ComboBox`：切換 `ListView` 的 `LargeIcon`、`Details`、`SmallIcon`、`List`、`Tile` 檢視模式。
@@ -32,3 +32,13 @@
 - `ListBox`：顯示已借閱書籍。
 - `Dock` 版面配置：讓工具列、圖書清單與借書清單可隨視窗大小調整。
 - `ItemActivate` 事件：設定 `Activation = TwoClick`，使用者雙擊書籍時觸發借閱確認。
+
+## 專案檔案
+
+- `BookListView.sln`：Visual Studio 方案檔。
+- `BookListView.csproj`：WinForms 專案檔。
+- `Program.cs`：程式進入點。
+- `frmBooks.cs`：主視窗事件與圖書資料。
+- `frmBooks.Designer.cs`：主視窗控制項配置。
+- `Book1.bmp` 到 `Book8.bmp`：圖書封面圖片。
+- `screenshot.png`：本 README 使用的視窗截圖。
